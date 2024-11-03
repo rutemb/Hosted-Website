@@ -1,0 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+    color: white;
+    background-color: #7c6464;
+}
+
+body {
+    background-color: #f4f5f7;
+    font-family: sans-serif;
+}
+
+/* 1 rem = 16px */
+/* 30px = 3rem */
+/* 20px = 2rem */
+/* 50px = 5rem */
+/* 100px  = 10rem */
+
+html {
+    font-size: 50.9%;
+    /* 1rem = 16px */
+}
+
+/* NavBar */
+
+.nav-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(2, 181, 251);
+    width: 100%;
+    padding: 8px;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.logo span {
+    color: red;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.nav-bar ul li .nav-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .6);
+    transition: .5s;
+}
+
+.nav-bar ul li .nav-link:hover {
+    color: rgba(255, 255, 255);
+}
+
+.nav-bar ul li .home {
+    color: white;
+}
+
+
+.drop-down-icon {
+    font-size: 15px;
+}
+
+.nav-bar ul .drop-down-link {
+    position: relative;
+}
+
+.drop-down {
+    background-color: white;
+    position: absolute;
+    margin-top: 2rem;
+    width: 16rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .3s;
+}
+
+.drop-down-link:hover .drop-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.drop-down::before {
+    content: "";
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    position: absolute;
+    left: 20%;
+    transform: translateY(-8px) rotate(45deg);
+}
+
+.drop-down ul li {
+    display: block;
+}
+
+.drop-down ul li a {
+    color: rgba(0, 0, 0, .7);
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.drop-down ul li a:hover {
+    color: red;
+}
+
+.sub-menu-link {
+    position: relative;
+}
+
+.sub-drop-down {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: white;
+    width: 20rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .3s;
+}
+
+.sub-menu-link:hover .sub-drop-down {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SEARCH */
+.search {
+    margin-top: 15px;
+    float: left;
+    margin-right: 100px;
+}
+
+input {
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+button {
+    float: right;
+    background: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+}
+
+.responsive {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+marquee {
+    font-size: 30px;
+    color: gold;
+    background-color: rgb(249, 249, 251);
+}
+
+/* ______________________________select languages________________ */
+
+.google-translate {
+    display: block;
+    object-fit:cover
+}
+/* @media (max-width: 600px) {
+    .google-translate {
+        width: 100%;
+
+    }
+} */
+
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+}
+
+.goog-te-combo {
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    width: 200px;
+    background-color: rgb(254, 254, 252);
+    color: rgb(8, 8, 8);
+}
+
+.nav-bar .goog-te-gadget {
+    font-size: 0px;
+}
+
+
+/* CHATBOX */
+
+.header-2{
+    /* width: 100%; */
+    padding: 40px;
+}
+.img-01{
+    height: 30vh;
+    width: 100%;
+}
+#overflowTest {
+    /* background: #4CAF50; */
+    color: rgb(26, 24, 24);
+    padding: 45px;
+    width: 29%;
+    height: 700px;
+    overflow: scroll;
+    font-size: large;
+    /* border: 3px solid #ccc; */
+}
+
+/* DEBATE */
+.drop-down-1{
+    background-color: white;
+    position: absolute;
+    margin-top: 2rem;
+    width: 16rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .3s;
+}
+.nav-link:hover .drop-down-1{
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-down-1::before {
+    content: "";
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    position: absolute;
+    left: 20%;
+    transform: translateY(-8px) rotate(45deg);
+}
+
+/* SECTION  */
+.section-a{
+    /* position: relative; */
+    background: wheat;
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    margin: 15px;
+    right: 200px;
+    top: 400px;
+    /* object-fit: cover;  */
+}
+.section-a .section-b{
+    width: 600px;
+}
+.mini-sectio-1{
+    background-color: teal;
+    padding: 30px;
+    width: 30%;
+}
+.mini-section-2{
+    background: rebeccapurple;
+    padding: 30px;
+    width: 30%;
+}
+.mini-container-1{
+    background-color: aquamarine;
+    padding: 30px;
+    width: 30%;
+    
+}
+.mini-section-2 {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: red;
+}
+@media (max-width: 600px) {
+    .collection-1 {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+
+    }
+}
+.container-fiil{
+    position: absolute;
+    top: 40rem;
+    right: 22rem;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.content-fill{
+    display: flex;
+    height: 24px;
+    font-size: 2rem;
+    margin-right: auto;
+}
+.color-fiil{
+    color: white;
+    font-size: 2rem;
+    background: black;
+}
+.img-1l{
+    border-radius: 15px;
+    width: 60px;
+    height: 70vh;
+}
+.box-c0ntainer{
+    width: 50%;
+    display: flex;
+    margin: 15px;
+    right: 50px;
+    top: 300px;
+}
+.box-1{
+    background: teal;
+}
+.box-2{
+    background: turquoise;
+}
+.b0x-3{
+    background: tan;
+}
+.fieldset-0{
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    display: flex;
+}
+/* TEN COMMANDMENTS */
+.container-home{
+    display: flex;
+}
+.ten-commandments{
+   margin-left: 10px;
+   margin-top: 10px;
+}
+.img-container-1{
+    display: block;
+}
+.container-home-2{
+    display: flex;
+    margin-top: 15px;
+}
+.holy-covenent{
+    display: block;
+}
+.ten-commandments{
+    height: 100hv;
+    width: 70%;
+}
+.pra-2{
+    font-size: medium;
+    background: pink;
+    position: absolute;
+    margin-top: 20px;
+
+}
+.header-2{
+
+}
+
+
+
+/* Default styling for mobile devices */
+
+
+/* Tablet devices */
+/* @media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+} */
+
+/* Desktop devices */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
